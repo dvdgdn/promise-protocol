@@ -1,4 +1,4 @@
-````markdown
+
 # PROMISE Protocol
 
 **A Mass Online Reasoning & Expertise Marketplace**  
@@ -304,5 +304,3 @@ Read `docs/ethics.md`, explore `examples/`, then try the Quickstart to create a 
 
 **Build with us. Keep your promises.**
 
-```
-```
