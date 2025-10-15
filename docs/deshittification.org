@@ -1,0 +1,69 @@
+#+TITLE: How We Compete With the Big Enshittifiers
+#+OPTIONS: toc:nil num:nil
+
+* The one-minute version
+Most platforms get worse over time: they squeeze users, hide the good stuff, and sell your attention.  
+We flip that: *every important claim becomes a promise with proof*. If someone says “I’ll do X by Y,”
+we lock the terms, collect neutral evidence, and show *Kept / Missed* with receipts.
+Good actors rise because they actually keep promises; bad actors can’t hide.
+
+* What’s different under the hood
+- **ABDUCTIO (decision engine):** Before you act, it asks “What little bit of evidence is worth paying for next?”
+  That saves time and money and avoids hype.
+- **SPONSIO (promise engine):** After you act, independent assessors verify results against the frozen rules.
+  No moving goalposts, no vague stars.
+- **Merit is domain-specific:** Great at /coding/frontend/ doesn’t auto-make you great at /legal/contracts/.
+- **Open audit trail:** Cryptographic receipts prove *who said what, when*, and what evidence was checked.
+
+* Dual-track money model (safe today, powerful later)
+- **Track A — Marketplace Lite (now):** Real money runs through normal card payments (auth→capture),
+  with optional deposits. We *don’t* hold balances or run wallets.
+- **Track B — Service Credits (issuer-only):** You can buy packs that pay for *our own* platform evaluations
+  (e.g., an ABDUCTIO decision pack). They aren’t transferable or cash-outable.
+- Later, when we have volume + approvals, both tracks can graduate to fully staked/escrowed promises
+  with a licensed payments partner.
+
+* The gated snowball (how we scale without big capital)
+1) **Gate 1 — Simple, low-risk jobs (e.g., coaching reliability):**
+   Prove speed + fairness. Publish honest stats (on-time %, coverage, disputes).
+2) **Gate 2 — Higher-stakes reviews (e.g., loan/grant screens):**
+   Show our scores predict outcomes better than status quo. Keep audit trails clean.
+3) **Gate 3 — Institutional programs (state banks, agencies):**
+   Integrate, standardize, and publish program dashboards.
+4) **Gate 4 — National templates & licensing:**
+   Become the default method; build a big outcome dataset.
+5) **Gate 5 — Enterprise AI audits:**
+   Map to regulations, verify real-world performance.
+6) **Gate 6 — Expert marketplace (with assessments):**
+   Route the best experts/agents; pay per verified result.
+7) **Gate 7 — Cross-domain trust infra:**
+   Open APIs so other platforms can plug in our “promise + proof” rails.
+
+* Why this can beat enshittification
+- **Costs trend down, quality trends up:** ABDUCTIO buys only the evidence that matters.
+- **No hidden “rank tax”:** Placement comes from kept promises + transparent coverage, not pay-to-play.
+- **Proof travels:** Your kept-promise record is portable (by domain), so platforms must treat you fairly.
+- **User control & privacy by default:** We publish *minimal* public receipts (month | standard | kept/missed),
+  not your personal data or exact timestamps.
+
+* What you’ll notice as a user
+- *Clear tiles:* “Kept / Missed / Renegotiated,” with confidence labels and sample size.
+- *Fast resolution:* Simple deposits + rules → quick refunds or captures; no endless tickets.
+- *Honest small-n:* We show confidence bands and “limited data” badges instead of faking certainty.
+- *Appeals that work:* Independent rotation + evidence checks; overturned calls are documented.
+
+* Why it’s hard for the big guys to copy
+- **Outcome dataset moat:** Years of paired “promise→result” data you can’t buy off the shelf.
+- **Co-op incentives:** Builders and assessors earn ownership via verified contributions,
+  which BigCo can’t easily match with ad dollars.
+- **Standards first:** We anchor to regulations and program rules; ripping us out creates audit risk.
+
+* What could go wrong (and how we handle it)
+- *People try to game the rules:* We rotate assessors, cap influence, and check source overlap.
+- *Early data is noisy:* We show Wilson lower bounds and require minimum coverage before ranking.
+- *Money gets messy:* We keep funds on standard rails now; add licensed escrow only when ready.
+
+* Bottom line
+We replace “trust us” with *“show me.”*  
+Every step earns the right to the next gate. Quality compounds. Bad behavior can’t hide.  
+That’s how you out-compete enshittification—by making honest work the easiest way to win.
