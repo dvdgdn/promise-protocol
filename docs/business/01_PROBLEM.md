@@ -1,6 +1,7 @@
 # 1) Problem → Insight — for first-time readers
 
-## The Problem: We can’t tell what to believe *before* we commit
+## The Problem: We can’t tell what to believe *before* we commit to promises, and we can't hold promisers to account *after* we commit.
+
 You’ve lived this:
 - A coach promises “life-changing results,” and nothing changes.
 - A freelancer says “two weeks,” and it drags for months.
@@ -8,11 +9,11 @@ You’ve lived this:
 
 We’re drowning in information and “intelligence,” yet we still make expensive decisions on **vibes**. Reviews are gamed, credentials don’t transfer between topics, and contracts are slow and fuzzy about success. The real failure happens **pre-commit**: we can’t orchestrate all that information into a clear, justified **“yes” or “no”** before we spend time and money.
 
-## The Two Moments Every Promise Has
+## The Two Steps Every Promise Has
 1) **Pre-commit:** *Should I believe this claim?*  
 2) **Post-commit:** *Did the promised outcome actually happen?*
 
-Most systems mush these together. That’s why we argue later instead of deciding well now.
+The big, complicated trust quagmire known as the web doesn't help us slow down and act intentionally to get these steps right.  
 
 ---
 
@@ -42,8 +43,9 @@ Result: a one-page, auditable rationale you can share. No jargon needed.
 
 ---
 
-### SPONSIO (post-commit) — money moves only when outcomes are verified
-SPONSIO starts **after** you commit. You pre-register a simple pass/fail rule (“If ISI ≤ 12 at week 4, capture the success fee; else refund it”). The outcome is measured; payment is captured or refunded automatically. No custody. No he-said-she-said. Just the rule everyone agreed to.
+### SPONSIO (post-commit) — an easy way to record the results of outcomes with high fidelity and integrity
+
+SPONSIO starts **after** you commit. a *promise* (simple pass/fail rule) is pre-registered (“If ISI ≤ 12 at week 4, capture the success fee; else refund it”). The outcome is publicly assessed (either anonymously or not, but always with skin in the game); 
 
 > **Complementary, not required:** SPONSIO is useful when a promise involves payment and both sides want **automatic, verifiable settlement**. ABDUCTIO does not depend on it.
 
