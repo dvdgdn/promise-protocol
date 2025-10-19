@@ -1,0 +1,8 @@
+# abm/params.py
+BASE_STAKE = 100
+GAMMA = 0.1  # merit step
+LAMBDA_PENALTY = 3.5
+DETECTION_SENSITIVITY = 1.0
+DISCOUNT_FACTOR = 0.92
+ASSESSOR_FRACTION = 0.2
+BASE_INCOME_PER_ROUND = 0.01 # Small base income for agents

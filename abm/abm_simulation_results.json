@@ -1,0 +1,89 @@
+{
+  "timestamp": "2025-07-05T16:24:45.875907",
+  "simulations": [
+    {
+      "scenario": "Normal Operation",
+      "n_agents": 100,
+      "n_rounds": 100,
+      "coalition_formed": false,
+      "coalition_size": 0,
+      "promise_keeping_rate_global": 0.7948384515354606,
+      "total_promises_made": 9997,
+      "detection_events": 6,
+      "assessments_total": 199940,
+      "detection_probability": 3.000900270081024e-05,
+      "final_average_merit": 0.7870748586838355,
+      "merit_variance": 0.07241393772400519
+    },
+    {
+      "scenario": "Small Coalition Attack (10%)",
+      "n_agents": 100,
+      "n_rounds": 100,
+      "coalition_formed": true,
+      "coalition_size": 10,
+      "promise_keeping_rate_global": 0.7669119149805845,
+      "total_promises_made": 9786,
+      "detection_events": 109,
+      "assessments_total": 195720,
+      "detection_probability": 0.0005569180461884324,
+      "final_average_merit": 0.7161423092344742,
+      "merit_variance": 0.10180655692780956
+    },
+    {
+      "scenario": "Large Coalition Attack (30%)",
+      "n_agents": 100,
+      "n_rounds": 100,
+      "coalition_formed": true,
+      "coalition_size": 30,
+      "promise_keeping_rate_global": 0.769070662920179,
+      "total_promises_made": 9609,
+      "detection_events": 1009,
+      "assessments_total": 192180,
+      "detection_probability": 0.00525028619003018,
+      "final_average_merit": 0.6102774319799109,
+      "merit_variance": 0.16127731225398573
+    },
+    {
+      "scenario": "Early Coalition Attack (20%)",
+      "n_agents": 100,
+      "n_rounds": 100,
+      "coalition_formed": true,
+      "coalition_size": 20,
+      "promise_keeping_rate_global": 0.7738962708958422,
+      "total_promises_made": 9332,
+      "detection_events": 714,
+      "assessments_total": 186640,
+      "detection_probability": 0.0038255465066438063,
+      "final_average_merit": 0.6613156038115229,
+      "merit_variance": 0.13226396490981457
+    },
+    {
+      "scenario": "Late Coalition Attack (20%)",
+      "n_agents": 100,
+      "n_rounds": 100,
+      "coalition_formed": true,
+      "coalition_size": 20,
+      "promise_keeping_rate_global": 0.7745226790584907,
+      "total_promises_made": 9899,
+      "detection_events": 140,
+      "assessments_total": 197980,
+      "detection_probability": 0.0007071421355692494,
+      "final_average_merit": 0.7041051688247046,
+      "merit_variance": 0.12644542428977723
+    },
+    {
+      "scenario": "Extended Treasury Test",
+      "n_agents": 100,
+      "n_rounds": 300,
+      "coalition_formed": false,
+      "coalition_size": 0,
+      "promise_keeping_rate_global": 0.7986501263149957,
+      "total_promises_made": 26521,
+      "detection_events": 14,
+      "assessments_total": 530420,
+      "detection_probability": 2.6394178198408806e-05,
+      "final_average_merit": 0.7008086864557402,
+      "merit_variance": 0.10491478948308484
+    }
+  ]
+}

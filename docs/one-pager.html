@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise Protocol - Technical Overview</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 15mm;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.4;
+            color: #1a1a1a;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 15mm;
+            background: white;
+        }
+        
+        .header {
+            border-bottom: 3px solid #000;
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+        }
+        
+        h1 {
+            font-size: 22pt;
+            margin: 0 0 4px 0;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+        
+        .tagline {
+            font-size: 11pt;
+            color: #555;
+            margin: 0;
+            font-weight: 500;
+        }
+        
+        h2 {
+            font-size: 12pt;
+            font-weight: 700;
+            margin: 12px 0 6px 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 3px;
+        }
+        
+        h3 {
+            font-size: 10pt;
+            font-weight: 700;
+            margin: 8px 0 4px 0;
+            color: #2c2c2c;
+        }
+        
+        p, li {
+            font-size: 9pt;
+            margin: 4px 0;
+        }
+        
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin: 8px 0;
+        }
+        
+        .three-col {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin: 8px 0;
+        }
+        
+        .box {
+            border: 1.5px solid #333;
+            padding: 8px;
+            background: #fafafa;
+            border-radius: 4px;
+        }
+        
+        .highlight-box {
+            background: #f0f0f0;
+            border-left: 4px solid #000;
+            padding: 8px;
+            margin: 8px 0;
+        }
+        
+        ul {
+            margin: 4px 0;
+            padding-left: 18px;
+        }
+        
+        li {
+            margin: 2px 0;
+        }
+        
+        .metric {
+            font-weight: 700;
+            color: #000;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 8.5pt;
+            margin: 6px 0;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 4px 6px;
+            text-align: left;
+        }
+        
+        th {
+            background: #e8e8e8;
+            font-weight: 700;
+            font-size: 8pt;
+        }
+        
+        .footer {
+            margin-top: 12px;
+            padding-top: 8px;
+            border-top: 2px solid #000;
+            font-size: 8pt;
+            color: #666;
+        }
+        
+        strong {
+            font-weight: 700;
+            color: #000;
+        }
+        
+        .compact {
+            line-height: 1.3;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>PROMISE PROTOCOL</h1>
+        <p class="tagline">Infrastructure for Verifiable Trust Through Domain-Specific Promises</p>
+    </div>
+
+    <h2>1. The Problem & Market Opportunity</h2>
+    
+    <div class="highlight-box compact">
+        <strong>Core Problem:</strong> The information tsunami has rendered credibility evaluation impossible online. Anyone can make claims; verifying them takes time, expertise, and risk. This creates adverse selection where dishonesty is rewarded.
+    </div>
+    
+    <div class="two-col">
+        <div class="box">
+            <h3>Total Addressable Market (TAM)</h3>
+            <ul>
+                <li><strong>Trust/Verification Services:</strong> $45B+ global market</li>
+                <li><strong>Initial Wedge (Germany):</strong> ~27K Tragfähigkeitsbescheinigungen/year</li>
+                <li><strong>Adjacent Markets:</strong> Professional services verification, AI capability assessment, B2B growth claims</li>
+                <li><strong>Expansion:</strong> Any domain with measurable outcomes and consequential claims</li>
+            </ul>
+        </div>
+        
+        <div class="box">
+            <h3>Why Now?</h3>
+            <ul>
+                <li><strong>AI Flood:</strong> LLMs make generating plausible claims trivial</li>
+                <li><strong>Verification Crisis:</strong> Traditional reputation systems failing at scale</li>
+                <li><strong>Economic Pressure:</strong> Markets demand higher-fidelity trust signals</li>
+                <li><strong>Regulatory Tailwind:</strong> EU AI Act creates demand for capability verification</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2>2. The Solution: Three-Part System</h2>
+    
+    <div class="three-col">
+        <div class="box">
+            <h3>Promise Protocol</h3>
+            <p><strong>Pre-Commit (Abductio):</strong> Structured reasoning to justify expectations before commitment</p>
+            <p><strong>Post-Commit (Sponsio):</strong> Verifiable outcome assessment with staked resources</p>
+            <p style="margin-top: 6px; font-style: italic; font-size: 8.5pt;">The trust infrastructure layer</p>
+        </div>
+        
+        <div class="box">
+            <h3>Promise Platform</h3>
+            <p>Discovery layer where users find and evaluate promises with transparent track records</p>
+            <p style="margin-top: 6px; font-style: italic; font-size: 8.5pt;">The marketplace for verifiable commitments</p>
+        </div>
+        
+        <div class="box">
+            <h3>Promise Foundation</h3>
+            <p>Platform cooperative (eG) owned by contributors, experts, providers, and users</p>
+            <p style="margin-top: 6px; font-style: italic; font-size: 8.5pt;">The governance layer</p>
+        </div>
+    </div>
+
+    <h2>3. Competitive Landscape & Differentiation</h2>
+    
+    <table>
+        <tr>
+            <th>Solution</th>
+            <th>Approach</th>
+            <th>Limitation</th>
+            <th>Promise Advantage</th>
+        </tr>
+        <tr>
+            <td><strong>Kleros</strong></td>
+            <td>Decentralized arbitration</td>
+            <td>Dispute-focused, no pre-commitment</td>
+            <td>Pre-commit protocol prevents disputes</td>
+        </tr>
+        <tr>
+            <td><strong>Review Platforms</strong></td>
+            <td>Aggregated feedback</td>
+            <td>Gameable, domain-agnostic, no skin in game</td>
+            <td>Domain-specific merit with staked assessments</td>
+        </tr>
+        <tr>
+            <td><strong>BrightID/PoP</strong></td>
+            <td>Identity verification</td>
+            <td>Identity only, no outcome verification</td>
+            <td>Identity + capability + outcome verification</td>
+        </tr>
+        <tr>
+            <td><strong>Credit Rating Agencies</strong></td>
+            <td>Centralized scoring</td>
+            <td>Single point of failure, capture risk</td>
+            <td>Decentralized, merit-weighted consensus</td>
+        </tr>
+    </table>
+
+    <h2>4. Implementation Roadmap & Costs</h2>
+    
+    <div class="two-col">
+        <div class="box">
+            <h3>Phase 1: Foundation (Months 1-3)</h3>
+            <p><strong>Budget:</strong> €50K</p>
+            <ul>
+                <li>Core protocol + agent primitives</li>
+                <li>Content-addressed storage</li>
+                <li>Abductio Free (decision scaffold)</li>
+                <li>Initial merit/credit ledgers</li>
+            </ul>
+        </div>
+        
+        <div class="box">
+            <h3>Phase 2: First Vertical (Months 4-6)</h3>
+            <p><strong>Budget:</strong> €30K</p>
+            <ul>
+                <li>Tragfähigkeitsbescheinigung SaaS wrapper</li>
+                <li>6 startup pilot × 1 VC partner</li>
+                <li>Evidence docket exporter</li>
+                <li>Initial domain activation</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="box" style="margin-top: 8px;">
+        <h3>Phase 3: Expansion (Months 7-9) — Budget: €40K</h3>
+        <p>Health vertical pilot (200 clients × smoking cessation with Bedfont piCO+ verification) + SDK v2 for third-party integrations</p>
+        <p><strong>Total MVP Cost:</strong> €120K over 9 months</p>
+    </div>
+
+    <h2>5. Governance Model (Platform Cooperative)</h2>
+    
+    <div class="two-col">
+        <div class="box compact">
+            <h3>Ownership Structure</h3>
+            <ul style="font-size: 8.5pt;">
+                <li><strong>40%</strong> — Contributors (builders, developers)</li>
+                <li><strong>30%</strong> — Foundation (protocol stewardship)</li>
+                <li><strong>20%</strong> — Early users (providers, assessors)</li>
+                <li><strong>10%</strong> — Reserve (future allocation)</li>
+            </ul>
+        </div>
+        
+        <div class="box compact">
+            <h3>Decision Rights</h3>
+            <p><strong>One member, one vote</strong> on major changes</p>
+            <p><strong>Double majority required:</strong> overall + within each stakeholder group</p>
+            <p><strong>Merit-weighted influence</strong> in domain-specific standards only</p>
+        </div>
+    </div>
+
+    <h2>6. Attack Scenarios & Mitigations</h2>
+    
+    <table>
+        <tr>
+            <th>Attack Vector</th>
+            <th>Mechanism</th>
+            <th>Mitigation</th>
+            <th>Effectiveness</th>
+        </tr>
+        <tr>
+            <td><strong>Sybil Attack</strong></td>
+            <td>Multiple fake identities</td>
+            <td>Social graph (BrightID-style) + progressive staking costs</td>
+            <td>Cost grows quadratically; 8+ identities = economically irrational</td>
+        </tr>
+        <tr>
+            <td><strong>Coalition Collusion</strong></td>
+            <td>Coordinated false assessments</td>
+            <td>Super-linear cost growth, pattern detection, merit dilution</td>
+            <td>Coalition viability theorem: >8 agents = unprofitable (ABM validated)</td>
+        </tr>
+        <tr>
+            <td><strong>Gaming Merit</strong></td>
+            <td>Reputation laundering</td>
+            <td>Domain separation, evidence requirements, cross-validation</td>
+            <td><5% effectiveness after 4+ domains per whitepaper simulations</td>
+        </tr>
+        <tr>
+            <td><strong>Identity Compromise</strong></td>
+            <td>Account takeover</td>
+            <td>Rate limiting, anomaly detection, community appeals</td>
+            <td>Temporal patterns + merit history = detection within 10 rounds</td>
+        </tr>
+    </table>
+
+    <h2>7. Core Trust Mechanisms</h2>
+    
+    <div class="two-col">
+        <div class="box compact">
+            <h3>Economic Barriers (Primary Defense)</h3>
+            <ul style="font-size: 8.5pt;">
+                <li><strong>Progressive staking costs:</strong> Creating fake identities becomes exponentially expensive</li>
+                <li><strong>Slashing mechanism:</strong> Dishonest promises/assessments lose staked credits</li>
+                <li><strong>Reward pool:</strong> Slashed stakes fund rewards for honest actors</li>
+                <li><strong>Result:</strong> Honesty becomes the utility-maximizing strategy</li>
+            </ul>
+        </div>
+        
+        <div class="box compact">
+            <h3>Merit-Weighted Assessment</h3>
+            <ul style="font-size: 8.5pt;">
+                <li><strong>Domain-specific accumulation:</strong> Can't transfer success from one area to another</li>
+                <li><strong>Track record required:</strong> New agents face stricter evidence requirements</li>
+                <li><strong>Assessor influence scales with merit:</strong> Proven experts carry more weight</li>
+                <li><strong>Result:</strong> Manipulation requires building real credibility first</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2>8. Key Performance Indicators & Validation</h2>
+    
+    <div class="two-col">
+        <div class="box compact">
+            <h3>ABM Simulation Results</h3>
+            <ul style="font-size: 8.5pt;">
+                <li><strong>76.7-79.9%</strong> promise-keeping rate under attack</li>
+                <li><strong>175×</strong> increase in malicious behavior detection</li>
+                <li><strong>45.6%</strong> credit growth over 300 rounds</li>
+                <li><strong>0.7-0.88</strong> honest agent merit vs. 0.005-0.013 malicious</li>
+            </ul>
+        </div>
+        
+        <div class="box compact">
+            <h3>Pilot Success Criteria</h3>
+            <ul style="font-size: 8.5pt;">
+                <li><strong>Time Saved:</strong> ≥40-60% vs. manual review</li>
+                <li><strong>Calibration:</strong> Brier ≤0.18, ECE ≤4%</li>
+                <li><strong>Agreement:</strong> Cohen's κ ≥0.6 vs. human experts</li>
+                <li><strong>Evidence Quality:</strong> ≥95% with 3+ independent sources</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2>9. Economics & Revenue Model</h2>
+    
+    <div class="three-col">
+        <div class="box compact">
+            <h3>Abductio SaaS</h3>
+            <p><strong>Consultant Starter:</strong> €79/seat/mo + €9/report</p>
+            <p><strong>Pro:</strong> €149/seat/mo + €5/report</p>
+            <p><strong>IHK Pilot:</strong> €4K/quarter (10 seats)</p>
+        </div>
+        
+        <div class="box compact">
+            <h3>Sponsio Platform</h3>
+            <p><strong>Transaction Fee:</strong> 2-3% of promise value</p>
+            <p><strong>Assessor Credits:</strong> Earned through verified assessments</p>
+            <p><strong>Premium Domains:</strong> Subscription access</p>
+        </div>
+        
+        <div class="box compact">
+            <h3>Year 1 Projection</h3>
+            <p><strong>ARR Target:</strong> €25-45K from initial issuers</p>
+            <p><strong>Users:</strong> 200 consultants, 2-3 IHKs</p>
+            <p><strong>CAC:</strong> €800-1,200</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p><strong>Promise Foundation</strong> • Technical Whitepaper: promise.foundation/whitepaper • Contact: foundation@promise.foundation</p>
+        <p>This document provides decision-support information for potential partners, investors, and collaborators. All figures are estimates based on current market research and simulation results. Updated: October 2025</p>
+    </div>
+</body>
+</html>
